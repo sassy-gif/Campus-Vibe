@@ -6,12 +6,12 @@
   <title>Campus Vibes</title>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+ <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
 
   <!-- 🔝 NAVBAR -->
   <header class="navbar">
@@ -25,14 +25,12 @@
     </nav>
   </header>
 
-  <!-- 🏠 HERO SECTION -->
   <section class="hero">
-    <h1>Find Your Perfect Spot on Campus</h1>
-    <p>Cafes, food, and hidden gems around Haramaya</p>
+    <h1>Find Your Perfect Spot on HU Main Campus</h1>
+    <p>Cafes, food, and hidden gems around Haramaya University</p>
     <button class="explore-btn">Explore Spots</button>
   </section>
 
-  <!-- 🔍 FILTER + SEARCH -->
   <section class="controls">
     <div class="filters">
       <button class="filter-btn active">All</button>
@@ -45,34 +43,133 @@
     <input type="text" placeholder="Search spots..." class="search-bar">
   </section>
 
-  <!-- 🧩 SPOTS SECTION -->
-  <section class="spots-container">
+ <!--SPOTS SECTION -->
+<section class="spots-container">
 
-    <!-- Example Card -->
-    <div class="card">
-      <img src="images/cafe1.jpg" alt="Cafe">
-      <h3>Campus Cafe</h3>
-      <p></p>
+
+  <h2 class="section-title">☕ Cafes & Food Spots</h2>
+
+  <div class="grid">
+
+    <div class="card" data-category="cafe">
+      <img src="images/caffe.jpg" alt="Denbel Cafe">
+      <h3>Denbel Cafe</h3>
+      <p>Great food, always crowded. Even more alive at night 😭</p>
     </div>
 
-    <div class="card">
-      <img src="images/food1.jpg" alt="Food">
-      <h3>Student Cafeteria</h3>
-      <p>Cheap but always busy</p>
+    <div class="card" data-category="cafe">
+      <img src="images/coffe2.jpg" alt="Welega">
+      <h3>Welega</h3>
+      <p>Peanut tea, ginger tea for campus flu ☕ always crowded at night</p>
     </div>
 
-    <div class="card">
-      <img src="images/shop1.jpg" alt="Shop">
-      <h3>Mini Market</h3>
-      <p>Quick snacks and essentials</p>
+    <div class="card" data-category="cafe">
+      <img src="images/caffe.jpg" alt="Asma">
+      <h3>Asma</h3>
+      <p>Fetira, Ambasha, Melaweha, Sambusa 🔥 always busy place</p>
     </div>
 
-  </section>
+    <div class="card" data-category="cafe">
+      <img src="images/" alt="KT">
+      <h3>KT</h3>
+      <p>Far but worth it. Amazing view + sunset vibes 🌇</p>
+    </div>
+
+    <div class="card" data-category="cafe">
+      <img src="images/faris.jpg" alt="Faris">
+      <h3>Faris</h3>
+      <p>Quiet normally… turns into stadium during football matches 💀</p>
+    </div>
+
+    <div class="card" data-category="cafe">
+      <img src="images/aynye.jpg" alt="Aynye">
+      <h3>Aynye</h3>
+      <p>Close to classrooms, delicious food, run by a brave woman 👏</p>
+    </div>
+
+    <div class="card" data-category="cafe">
+      <img src="images/" alt="Liyu">
+      <h3>Liyu</h3>
+      <p>Burrito snacks 🌯 simple and good</p>
+    </div>
+
+  </div>
+
+  <!-- ☕ COFFEE SPOTS -->
+  <h2 class="section-title">☕ Coffee Spots</h2>
+
+  <div class="grid">
+
+    <div class="card" data-category="coffee">
+      <img src="images/coffee1.jpg" alt="Oromiya Coffee">
+      <h3>Oromiya</h3>
+      <p>Best coffee on campus ☕ strong and tasty</p>
+    </div>
+
+    <div class="card" data-category="coffee">
+      <img src="images/coffee3.jpg" alt="Hindiya">
+      <h3>Hindiya</h3>
+      <p>Hidden gem 👀 quiet and peaceful coffee spot</p>
+    </div>
+
+    <div class="card"  data-category="coffee">
+      <img src="images/coffe4.jpg" alt="Welega Cafe">
+      <h3>Welega Cafe</h3>
+      <p>Reliable food and coffee combo</p>
+    </div>
+
+  </div>
+
+  
+  <h2 class="section-title">🍟 Snack Spots</h2>
+
+  <div class="grid">
+
+    <div class="card" data-category="snack">
+      <img src="images/chips.jpg" alt="Urge">
+      <h3>Urge</h3>
+      <p>Chips & ertib — campus life saver 💀</p>
+    </div>
+
+    <div class="card" data-category="snack">
+      <img src="images/snack1.jpg" alt="Mensur">
+      <h3>Mensur</h3>
+      <p>Always crowded, always snacks, always chaos 😭</p>
+    </div>
+
+    <div class="card" data-category="snack">
+      <img src="images/borito.jpg" alt="Liyu Snacks">
+      <h3>Liyu Snack</h3>
+      <p>Burrito & fetira combo 🌯🔥</p>
+    </div>
+
+  </div>
+
+  <!-- 🛍️ SHOPS -->
+  <h2 class="section-title">🛍️ Shops</h2>
+
+  <div class="grid">
+
+    <div class="card" data-category="shop">
+      <img src="images/mensur-shop.jpg" alt="Mensur Shop">
+      <h3>Mensur Shop</h3>
+      <p>Always crowded but has everything you need</p>
+    </div>
+
+    <div class="card"  data-category="shop">
+      <img src="images/oromiya-shop.jpg" alt="Oromiya Shop">
+      <h3>Oromiya Shop</h3>
+      <p>Small-big shop with almost everything + coffee ☕</p>
+    </div>
+
+  </div>
+
+</section>
 
   <!-- 📜 FOOTER -->
   <footer class="footer">
     <p>© 2026 Campus Vibes | Haramaya University</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
